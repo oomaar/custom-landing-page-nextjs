@@ -1,12 +1,12 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const theme = {
-    colors: {
+  colors: {
 
-    },
-    fontSize: {
+  },
+  fontSize: {
 
-    }
+  }
 };
 
 export const GlobalStyle = createGlobalStyle`
@@ -36,6 +36,7 @@ export const GlobalStyle = createGlobalStyle`
   button {
     border: 0;
     outline: 0;
+    cursor: pointer;
   }
 
   ul {
