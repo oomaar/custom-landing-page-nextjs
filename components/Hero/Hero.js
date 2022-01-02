@@ -1,5 +1,6 @@
 import {
     Header,
+    Feature,
     Heading,
     SubHeading,
     Buttons,
@@ -9,8 +10,10 @@ import {
 export const Hero = () => {
     return (
         <Header>
-            <Heading>Welcome to Toky Tech</Heading>
-            <SubHeading>In this website you can Buy Domain / Hosting / Build A Website</SubHeading>
+            <Feature>
+                <Heading>Welcome to Toky Tech</Heading>
+                <SubHeading>In this website you can Buy Domain / Hosting / Build A Website</SubHeading>
+            </Feature>
             <Buttons>
                 <Button contact>Contact Us</Button>
                 <Button>Learn Making</Button>
