@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { mdScreen, smScreen, transition, xlScreen } from '../../Global/GlobalStyle';
 
 export const Nav = styled.nav`
   color: #fff;
@@ -10,35 +11,44 @@ export const Nav = styled.nav`
   justify-content: space-between;
   align-items: center;
   padding: 1rem 15rem;
-  background: ${({ active }) => active ? "#000" : "transparent"};
   z-index: 100;
+  transition: ${transition};
+  background: ${({ active }) => active ? "#000" : "transparent"};
 
-  @media screen and (max-width: 1300px) {
+  @media screen and (max-width: ${xlScreen}) {
     padding: 1rem 4rem;
   }
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: ${mdScreen}) {
     flex-direction: column;
     align-items: flex-start;
+    padding: 1rem 2rem;
+  }
+
+  @media screen and (max-width: ${smScreen}) {
+    padding: 1rem 0.5rem;
   }
 `;
 
 export const Logo = styled.h1`
-  font-size: 1.7rem;
+  cursor: pointer;
+  font-size: ${({ theme }) => theme.fontSize.logoFont};
 `;
 
 export const LinksContainer = styled.div`
-  display: ${({ active }) => active ? "flex" : "none"};
-
-  @media screen and (max-width: 900px) {
+  display: flex;
+  
+  @media screen and (max-width: ${mdScreen}) {
     width: 100%;
+    transition: ${transition};
+    transform: ${({ active }) => active ? "translateY(0)" : "translateY(-1000px)"};
   }
 `;
 
 export const LinksList = styled.ul`
   display: flex;
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: ${mdScreen}) {
     flex-direction: column;
     width: 100%;
   }
@@ -47,7 +57,7 @@ export const LinksList = styled.ul`
 export const ListItem = styled.li`
   margin: 0 1rem;
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: ${mdScreen}) {
     text-align: center;
     width: 100%;
     margin: 1rem 0;
@@ -55,9 +65,16 @@ export const ListItem = styled.li`
 `;
 
 export const Link = styled.a`
+  display: block;
   text-transform: uppercase;
   font-weight: 500;
-  display: block;
+  transition: ${transition};
+  border-bottom: 4px solid transparent;
+  padding-bottom: 0.3rem;
+
+  :hover {
+    border-bottom: 4px solid ${({ theme }) => theme.colors.firstColor};
+  }
 `;
 
 export const ToogleButton = styled.a`
@@ -70,7 +87,7 @@ export const ToogleButton = styled.a`
   top: 1.6rem;
   right: 2rem;
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: ${mdScreen}) {
     display: flex;
   }
 `;
