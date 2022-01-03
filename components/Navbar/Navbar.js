@@ -15,7 +15,7 @@ export const Navbar = () => {
 
     return (
         <Nav active={active}>
-            <Logo>Toky Tech</Logo>
+            <Logo>land page</Logo>
 
             <ToogleButton href="#" onClick={() => setActive(state => !state)}>
                 <Bar></Bar>

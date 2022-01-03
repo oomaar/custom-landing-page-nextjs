@@ -6,7 +6,7 @@ import {
 export const Footer = () => {
     return (
         <FooterContainer>
-            <Logo>Toky Tech</Logo>
+            <Logo>land page</Logo>
         </FooterContainer>
     );
 };
