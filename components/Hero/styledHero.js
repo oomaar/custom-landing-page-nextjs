@@ -44,7 +44,7 @@ export const SubHeading = styled.h1`
   ::after {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: -20px;
     left: 0;
     right: 0;
     margin: 0 auto;
