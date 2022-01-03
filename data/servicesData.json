@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "BUY DOMAIN WITH 100% SECURITY",
+    "subTitle": "Buy a domain name for your Website",
+    "buttonText": "Buy Domain"
+  },
+  {
+    "id": 2,
+    "title": "apply for batch",
+    "subTitle": "Apply For A Verified Web Developer Batch",
+    "buttonText": "Apply"
+  },
+  {
+    "id": 3,
+    "title": "BUY HOSTING WITH 100% SECUREITY",
+    "subTitle": "Buy A Hosting, Hosting Means A cloud Storage To Store Your Website",
+    "buttonText": "Buy Host"
+  },
+  {
+    "id": 4,
+    "title": "GET FREE CUSTOM DOMAIN NAME AND HOSTING",
+    "subTitle": "Get A Your Custom domain name and Hosting For Free",
+    "buttonText": "Start"
+  },
+  {
+    "id": 5,
+    "title": "START A FREE COURSE TO LEARN HTML, CSS",
+    "subTitle": "We Are Giving A Free Course And Tasks If you complete The Tasks We Will Give You A Batch Of Verified Web Devloper",
+    "buttonText": "Start"
+  },
+  {
+    "id": 6,
+    "title": "JOIN FREE CLASS",
+    "subTitle": "JOIN FREE CLASS!!! AND LEARB ABOUT HOW TO MAKE SITES",
+    "buttonText": "Start"
+  }
+]
