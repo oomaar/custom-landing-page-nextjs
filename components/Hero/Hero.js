@@ -11,12 +11,12 @@ export const Hero = () => {
     return (
         <Header>
             <Feature>
-                <Heading>Welcome to Toky Tech</Heading>
-                <SubHeading>In this website you can Buy Domain / Hosting / Build A Website</SubHeading>
+                <Heading>Welcome</Heading>
+                <SubHeading>Domain / Hosting / Websites</SubHeading>
             </Feature>
             <Buttons>
                 <Button contact>Contact Us</Button>
-                <Button>Learn Making</Button>
+                <Button>Learn How</Button>
                 <Button>Youtube</Button>
             </Buttons>
         </Header>

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { mdScreen, smScreen } from '../../Global/GlobalStyle';
+import { lgScreen, mdScreen, smScreen } from '../../Global/GlobalStyle';
 
 export const Header = styled.header`
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.75)),
@@ -19,18 +19,26 @@ export const Header = styled.header`
 `;
 
 export const Feature = styled.div`
-  width: 750px;
+  width: 1020px;
   text-align: center;
 
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: ${lgScreen}) {
     width: 100%;
   }
 `;
 
-export const Heading = styled.h1`
+export const Heading = styled.p`
+  font-weight: 500;
   text-transform: uppercase;
-  position: relative;
   margin: 8rem 0 0 0;
+  color: ${({ theme }) => theme.colors.altColor};
+  font-size: ${({ theme }) => theme.fontSize.mediumFont};
+`;
+
+export const SubHeading = styled.h1`
+  margin: 2rem 0 3rem;
+  padding-bottom: 1.5rem;
+  position: relative;
   font-size: ${({ theme }) => theme.fontSize.bigFont};
 
   ::after {
@@ -43,13 +51,8 @@ export const Heading = styled.h1`
     width: 11rem;
     height: 0.25rem;
     border-radius: 1rem;
-    background: ${({ theme }) => theme.colors.firstColor};
+    background: ${({ theme }) => theme.colors.altColor};
   }
-`;
-
-export const SubHeading = styled.p`
-  margin: 2rem 0 3rem;
-  font-size: ${({ theme }) => theme.fontSize.mediumFont};
 
   @media screen and (max-width: ${smScreen}) {
     padding: 0 0.3rem;
@@ -71,7 +74,7 @@ export const Button = styled.button`
   text-transform: uppercase;
   color: #fff;
   border-radius: 2rem;
-  background: ${({ contact, theme }) => contact ? theme.colors.firstColor : `transparent`};
+  background: ${({ contact, theme }) => contact ? theme.colors.altColor : `transparent`};
   border: 1px solid ${({ contact }) => contact ? `transparent` : `#fff`};
   font-size: ${({ theme }) => theme.fontSize.buttonFont};
 

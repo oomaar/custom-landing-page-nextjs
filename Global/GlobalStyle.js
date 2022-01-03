@@ -10,13 +10,14 @@ export const smScreen = `600px`;
 export const theme = {
   colors: {
     firstColor: `#a1958d`,
+    altColor: `#ff0059`,
     textColor: `#fff`,
     textColorAlt: `#000`,
     bodyColor: `#eeefea`
   },
   fontSize: {
-    bigFont: `clamp(2rem, 3.2vw, 3.7rem)`,
-    mediumFont: `clamp(1.3rem, 2.5vw, 1.5rem)`,
+    bigFont: `clamp(1.7rem, 3vw, 3rem)`,
+    mediumFont: `clamp(1.5rem, 3vw, 2rem)`,
     logoFont: `1.7rem`,
     buttonFont: `1.2rem`,
   }
