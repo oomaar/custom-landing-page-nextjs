@@ -27,6 +27,7 @@ export const Nav = styled.nav`
 `;
 
 export const Logo = styled.h1`
+  text-transform: uppercase;
   cursor: pointer;
   font-size: ${({ theme }) => theme.fontSize.logoFont};
 `;

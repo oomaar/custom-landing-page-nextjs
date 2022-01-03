@@ -46,5 +46,6 @@ export const CardTitle = styled.h3`
 
 export const CardSubtitle = styled.p`
   height: 30%;
+  margin: 1rem 0;
   color: ${({ theme }) => theme.colors.firstColor};
 `;
