@@ -1,16 +1,22 @@
 import styled from 'styled-components';
+import { mdScreen } from "../../Global/GlobalStyle";
 
 export const CardContainer = styled.div`
   position: relative;
-  width: 270px;
+  width: 300px;
   height: 350px;
   border-radius: 1rem;
-  padding: 0.5rem;
+  padding: 2rem;
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   border: 1px solid ${({ theme }) => theme.colors.altColor};
+
+  @media screen and (max-width: ${mdScreen}) {
+    width: 270px;
+    padding: 0.5rem;
+  }
 `;
 
 export const Icon = styled.div`
@@ -34,9 +40,11 @@ export const CardTitle = styled.h3`
   text-transform: uppercase;
   font-weight: 700;
   margin-top: 2rem;
+  height: 30%;
   font-size: ${({ theme }) => theme.fontSize.cardFont};
 `;
 
 export const CardSubtitle = styled.p`
+  height: 30%;
   color: ${({ theme }) => theme.colors.firstColor};
 `;
