@@ -8,16 +8,12 @@ export const Nav = styled.nav`
   left: 0;
   right: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 1rem 15rem;
+  padding: 1rem 2rem;
   z-index: 100;
   transition: ${transition};
-  background: ${({ active }) => active ? "#000" : "transparent"};
-
-  @media screen and (max-width: ${xlScreen}) {
-    padding: 1rem 4rem;
-  }
+  background: ${({ active }) => active ? "#000" : "rgba(0, 0, 0, 0.5)"};
 
   @media screen and (max-width: ${mdScreen}) {
     flex-direction: column;
@@ -41,7 +37,8 @@ export const LinksContainer = styled.div`
   @media screen and (max-width: ${mdScreen}) {
     width: 100%;
     transition: ${transition};
-    transform: ${({ active }) => active ? "translateY(0)" : "translateY(-1000px)"};
+    transform: ${({ active }) => active ? "translateY(0)" : "translateY(-500px)"};
+    display: ${({ active }) => active ? "flex" : "none"};
   }
 `;
 
@@ -73,7 +70,7 @@ export const Link = styled.a`
   padding-bottom: 0.3rem;
 
   :hover {
-    border-bottom: 4px solid ${({ theme }) => theme.colors.firstColor};
+    border-bottom: 4px solid ${({ theme }) => theme.colors.altColor};
   }
 `;
 
