@@ -19,6 +19,7 @@ export const theme = {
     bigFont: `clamp(1.7rem, 3vw, 3rem)`,
     mediumFont: `clamp(1.5rem, 3vw, 2rem)`,
     logoFont: `1.7rem`,
+    cardFont: `1.5rem`,
     buttonFont: `1.2rem`,
   }
 };
@@ -85,5 +86,3 @@ export const SectionTitle = styled.h1`
   font-size: ${({ theme }) => theme.fontSize.bigFont};
   color: ${({ theme }) => theme.colors.altColor};
 `;
-
-export const SectionSubtitle = styled.p``;
