@@ -67,19 +67,3 @@ export const Buttons = styled.div`
     flex-direction: column;
   }
 `;
-
-export const Button = styled.button`
-  padding: 0.5rem 1.9rem;
-  margin: 0 1.5rem;
-  text-transform: uppercase;
-  color: #fff;
-  border-radius: 2rem;
-  background: ${({ contact, theme }) => contact ? theme.colors.altColor : `transparent`};
-  border: 1px solid ${({ contact }) => contact ? `transparent` : `#fff`};
-  font-size: ${({ theme }) => theme.fontSize.buttonFont};
-
-  @media screen and (max-width: ${mdScreen}) {
-    margin: 0.5rem 0;
-    width: 15rem;
-  }
-`;

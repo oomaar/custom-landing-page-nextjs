@@ -1,10 +1,10 @@
+import { Button } from "../../Global/GlobalStyle";
 import {
     Header,
     Feature,
     Heading,
     SubHeading,
     Buttons,
-    Button,
 } from "./styledHero";
 
 export const Hero = () => {

@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 
 export const transition = `all 0.5s ease-in`;
 
@@ -61,5 +61,21 @@ export const GlobalStyle = createGlobalStyle`
 
   li {
     list-style: none;
+  }
+`;
+
+export const Button = styled.button`
+  padding: 0.5rem 1.9rem;
+  margin: 0 1.5rem;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 2rem;
+  background: ${({ contact, theme }) => contact ? theme.colors.altColor : `transparent`};
+  border: 1px solid ${({ contact }) => contact ? `transparent` : `#fff`};
+  font-size: ${({ theme }) => theme.fontSize.buttonFont};
+
+  @media screen and (max-width: ${mdScreen}) {
+    margin: 0.5rem 0;
+    width: 15rem;
   }
 `;
