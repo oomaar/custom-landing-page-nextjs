@@ -1,4 +1,5 @@
 import { Hero, Navbar } from "../components";
+import { Services } from "../containers";
 import { NextHead } from "../Global/NextHead"
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
 
             <Navbar />
             <Hero />
+            <Services />
         </div>
     );
 };

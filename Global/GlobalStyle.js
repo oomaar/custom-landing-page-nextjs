@@ -79,3 +79,11 @@ export const Button = styled.button`
     width: 15rem;
   }
 `;
+
+export const SectionTitle = styled.h1`
+  text-transform: uppercase;
+  font-size: ${({ theme }) => theme.fontSize.bigFont};
+  color: ${({ theme }) => theme.colors.altColor};
+`;
+
+export const SectionSubtitle = styled.p``;
