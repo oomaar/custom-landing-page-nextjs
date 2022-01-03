@@ -1,4 +1,4 @@
-import { About, Hero, Navbar } from "../components";
+import { About, Footer, Hero, Navbar } from "../components";
 import { Services } from "../containers";
 import { NextHead } from "../Global/NextHead"
 
@@ -11,6 +11,7 @@ const Home = () => {
             <Hero />
             <Services />
             <About />
+            <Footer />
         </div>
     );
 };
