@@ -34,12 +34,22 @@ export const AboutCard = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 1rem 1rem;
+  text-align: center;
 
   h4 {
     margin: 1rem 0;
+  }
+
+  @media screen and (max-width: ${smScreen}) {
+    /* padding: 0 0.2rem 1rem; */
+    width: 100%;
   }
 `;
 
 export const AboutCardImage = styled.img`
   width: 270px;
+
+  @media screen and (max-width: ${smScreen}) {
+    width: 90%;
+  }
 `;

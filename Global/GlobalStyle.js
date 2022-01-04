@@ -16,8 +16,8 @@ export const theme = {
     bodyColor: `#eeefea`
   },
   fontSize: {
-    bigFont: `clamp(1.7rem, 3vw, 3rem)`,
-    mediumFont: `clamp(1.5rem, 3vw, 2rem)`,
+    bigFont: `clamp(1.3rem, 3vw, 3rem)`,
+    mediumFont: `clamp(1.3rem, 3vw, 2rem)`,
     logoFont: `1.7rem`,
     cardFont: `1.3rem`,
     buttonFont: `1.2rem`,
